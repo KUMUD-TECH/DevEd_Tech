@@ -1,0 +1,365 @@
+*{
+    margin: 0 0 50px 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Nav Bar Styling */
+
+nav{
+    padding:10px 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 80px;
+    margin-right: 20px;
+    
+}
+
+#above-logo {
+    margin-left: -150px;
+    font-size: 44px;
+    background: linear-gradient(to bottom, rgb(159, 4, 231), rgba(255, 204, 0, 1)); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s;
+
+}
+
+#above-logo:hover {
+    color: #0056b3;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar {
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+#search-form {
+    display: flex; 
+    align-items: center; 
+}
+
+input[type="text"] {
+
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px  0 0 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+input[type="text"]:focus {
+    border-color: #007BFF; 
+}
+
+button{
+    background-color: #f2f2f0;
+    border:1px solid #ddd;
+    border-radius: 0 25px 25px 0; 
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; 
+    height: 43px;
+}
+
+button:hover {
+    background-color: #e9eaec;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.Sign-up-btn, .Log-in-btn{
+    
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: blue;
+    color: #fff;
+    border-radius:25px;
+    margin-left: 25px;
+    font-weight: 400;
+    white-space: nowrap;
+
+}
+
+
+
+/*  Style for Course */
+
+
+ .course-heading{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(2, 57, 57);
+    margin-bottom: 100px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 74) ;
+    text-underline-offset:7px;
+    text-decoration-thickness:2px ;
+    
+
+}
+
+.course{
+    text-align: center;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    
+}
+
+.card{
+    align-items: center;
+    margin:20px;
+    width: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+
+
+
+
+.card-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    
+
+}
+
+.card-title{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.buy-btn{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: blue;
+    border-radius: 25px;
+    padding: 5px 22px;
+    margin: 10px 0;
+    font-size: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.buy-btn:hover{
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+.viewdetails-btn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 25px;
+    padding: 5px 90px;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+
+
+
+
+/* Style for Why DEvEd? */
+
+
+#why-heading{
+    text-align: center;
+    color: rgb(2, 57, 57); 
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0;
+    
+}
+
+.why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid greenyellow;
+    border-bottom: 2px solid lavender;
+    position: relative;
+    
+}
+
+.why:before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: -4px;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to bottom, greenyellow, rgba(255, 204, 0, 1)); 
+    z-index: -1;
+}
+
+.why:after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: -4px; 
+    height: 4px; 
+    width: 100%; 
+    background: linear-gradient(to right, lavender, rgba(2, 57, 57, 0.7)); 
+    z-index: -1; 
+}
+
+.why-subheading{
+    color:rgb(2, 57, 57);
+    font-size: 30px;
+    
+}
+
+#img1, #img2, #img3{
+    border-radius: 50%;
+    width: 15%;
+    height: 50%;
+    background-color: #dfdede;
+    margin: 10px 0;
+}
+
+
+/* Style for About Section */
+
+
+.about-heading{
+    text-align: center;
+    color: rgb(2, 57, 57);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.about{
+    font-size: 20px;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1,
+     #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    
+    border-radius: 30px;
+    margin:auto;
+    list-style: none;
+    padding: 30px 10px 50px 30px ;
+    width: 70%;
+    display: block;
+    word-spacing: 5px;
+}
+
+/* Style for Footer Section */
+
+.footer-section{
+    display: block;
+    background-color: #cff2ea;
+    border-radius: 30px;
+    margin: auto;
+    width: 70%;
+    margin-top: 70px;
+    padding-bottom: 70px;
+    
+    
+}
+
+
+footer img{
+    border-radius: 50%;
+    background-color:#69bff8 ;
+    margin:50px 150px;
+   
+}
+
+
+footer h3{ 
+    white-space: nowrap;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px; 
+    
+}
+
+li{
+    color: #2015ed;
+    white-space: nowrap;
+    
+}
+
+.footer-links{
+    display:inline-table;
+
+}
+
+
